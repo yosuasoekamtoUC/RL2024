@@ -1,0 +1,253 @@
+2024-05-28 23:47:53,402 INFO    StreamThr :277147 [internal.py:wandb_internal():87] W&B internal server running at pid: 277147, started at: 2024-05-28 23:47:53.401797
+2024-05-28 23:47:53,403 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status
+2024-05-28 23:47:53,404 INFO    WriterThread:277147 [datastore.py:open_for_write():85] open: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/run-maedkeys.wandb
+2024-05-28 23:47:53,404 DEBUG   SenderThread:277147 [sender.py:send():336] send: header
+2024-05-28 23:47:53,404 DEBUG   SenderThread:277147 [sender.py:send():336] send: run
+2024-05-28 23:47:53,959 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: check_version
+2024-05-28 23:47:53,959 INFO    SenderThread:277147 [dir_watcher.py:__init__():219] watching files in: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files
+2024-05-28 23:47:53,959 INFO    SenderThread:277147 [sender.py:_start_run_threads():1078] run started: maedkeys with start time 1716907673.401244
+2024-05-28 23:47:53,959 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: summary_record
+2024-05-28 23:47:53,959 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-05-28 23:47:53,959 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: check_version
+2024-05-28 23:47:54,114 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: run_start
+2024-05-28 23:47:54,123 DEBUG   HandlerThread:277147 [system_info.py:__init__():31] System info init
+2024-05-28 23:47:54,123 DEBUG   HandlerThread:277147 [system_info.py:__init__():46] System info init done
+2024-05-28 23:47:54,123 INFO    HandlerThread:277147 [system_monitor.py:start():183] Starting system monitor
+2024-05-28 23:47:54,123 INFO    SystemMonitor:277147 [system_monitor.py:_start():147] Starting system asset monitoring threads
+2024-05-28 23:47:54,123 INFO    HandlerThread:277147 [system_monitor.py:probe():204] Collecting system info
+2024-05-28 23:47:54,123 INFO    SystemMonitor:277147 [interfaces.py:start():187] Started cpu monitoring
+2024-05-28 23:47:54,124 INFO    SystemMonitor:277147 [interfaces.py:start():187] Started disk monitoring
+2024-05-28 23:47:54,125 INFO    SystemMonitor:277147 [interfaces.py:start():187] Started gpu monitoring
+2024-05-28 23:47:54,126 INFO    SystemMonitor:277147 [interfaces.py:start():187] Started memory monitoring
+2024-05-28 23:47:54,126 INFO    SystemMonitor:277147 [interfaces.py:start():187] Started network monitoring
+2024-05-28 23:47:54,136 DEBUG   HandlerThread:277147 [system_info.py:probe():195] Probing system
+2024-05-28 23:47:54,150 DEBUG   HandlerThread:277147 [git.py:repo():40] git repository is invalid
+2024-05-28 23:47:54,150 DEBUG   HandlerThread:277147 [system_info.py:probe():240] Probing system done
+2024-05-28 23:47:54,150 DEBUG   HandlerThread:277147 [system_monitor.py:probe():213] {'os': 'Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.17', 'python': '3.8.19', 'heartbeatAt': '2024-05-28T14:47:54.136612', 'startedAt': '2024-05-28T14:47:53.397994', 'docker': None, 'cuda': None, 'args': ('--env_id', 'ALE/Asterix-v5'), 'state': 'running', 'program': 'cleanrl_dqn_atari.py', 'codePath': 'cleanrl_dqn_atari.py', 'host': 'DESKTOP-LQ219J4', 'username': 'yos', 'executable': '/home/yos/miniconda3/envs/rl_hw4_atari/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 4192.039999999997, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}, {'current': 4192.04, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 1006.853931427002, 'used': 66.67830276489258}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 15.14449691772461}}
+2024-05-28 23:47:54,150 INFO    HandlerThread:277147 [system_monitor.py:probe():214] Finished collecting system info
+2024-05-28 23:47:54,150 INFO    HandlerThread:277147 [system_monitor.py:probe():217] Publishing system info
+2024-05-28 23:47:54,150 DEBUG   HandlerThread:277147 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-05-28 23:47:54,150 DEBUG   HandlerThread:277147 [system_info.py:_save_pip():67] Saving pip packages done
+2024-05-28 23:47:54,150 DEBUG   HandlerThread:277147 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-05-28 23:47:54,960 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/requirements.txt
+2024-05-28 23:47:54,960 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:47:54,961 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/conda-environment.yaml
+2024-05-28 23:47:55,127 DEBUG   HandlerThread:277147 [system_info.py:_save_conda():86] Saving conda packages done
+2024-05-28 23:47:55,127 DEBUG   HandlerThread:277147 [system_info.py:_save_code():89] Saving code
+2024-05-28 23:47:55,127 DEBUG   HandlerThread:277147 [system_info.py:_save_code():110] Saving code done
+2024-05-28 23:47:55,128 INFO    HandlerThread:277147 [system_monitor.py:probe():219] Finished publishing system info
+2024-05-28 23:47:55,130 DEBUG   SenderThread:277147 [sender.py:send():336] send: files
+2024-05-28 23:47:55,131 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-metadata.json with policy now
+2024-05-28 23:47:55,131 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file code/cleanrl_dqn_atari.py with policy now
+2024-05-28 23:47:55,135 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: stop_status
+2024-05-28 23:47:55,135 INFO    HandlerThread:277147 [handler.py:handle_tbrecord():747] handling tbrecord: tbrecord {
+  log_dir: "runs/ALE/Asterix-v5__cleanrl_dqn_atari__1__1716907672"
+  save: true
+}
+control {
+  relay_id: "47252e6913064bd3afdcfb46c8f9c040"
+}
+_info {
+  stream_id: "maedkeys"
+}
+
+2024-05-28 23:47:55,135 DEBUG   HandlerThread:277147 [config_util.py:dict_from_config_file():103] no default config file found in config-defaults.yaml
+2024-05-28 23:47:55,136 DEBUG   SenderThread:277147 [sender.py:send():336] send: telemetry
+2024-05-28 23:47:55,136 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: stop_status
+2024-05-28 23:47:55,452 DEBUG   SenderThread:277147 [sender.py:send():336] send: tbrecord
+2024-05-28 23:47:55,453 DEBUG   SenderThread:277147 [sender.py:send():336] send: files
+2024-05-28 23:47:55,453 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0 with policy live
+2024-05-28 23:47:55,457 INFO    wandb-upload_1:277147 [upload_job.py:push():118] Skipped uploading /tmp/tmpr_6cm7ruwandb/3vomxb56-code/cleanrl_dqn_atari.py
+2024-05-28 23:47:55,819 INFO    wandb-upload_0:277147 [upload_job.py:push():138] Uploaded file /tmp/tmpr_6cm7ruwandb/ehutmxec-wandb-metadata.json
+2024-05-28 23:47:55,960 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/conda-environment.yaml
+2024-05-28 23:47:55,960 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-metadata.json
+2024-05-28 23:47:55,960 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:47:55,960 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/code/cleanrl_dqn_atari.py
+2024-05-28 23:47:55,960 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:47:55,960 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_created():278] file/dir created: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/code
+2024-05-28 23:47:56,126 INFO    wandb-upload_2:277147 [upload_job.py:push():138] Uploaded file /tmp/tmpr_6cm7ruwandb/q5delioj-events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:47:57,960 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:47:58,454 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:03,454 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:08,455 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:10,133 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:10,180 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:13,455 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:15,134 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:18,456 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:20,135 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:23,459 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:23,967 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/config.yaml
+2024-05-28 23:48:25,136 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:28,717 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:30,136 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:33,717 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:35,137 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:38,718 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:40,138 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:43,719 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:45,138 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:48,720 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:50,139 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:53,720 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:48:54,126 DEBUG   SystemMonitor:277147 [system_monitor.py:_start():161] Starting system metrics aggregation loop
+2024-05-28 23:48:54,127 DEBUG   SenderThread:277147 [sender.py:send():336] send: stats
+2024-05-28 23:48:55,140 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:48:59,128 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:00,172 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:04,129 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:05,220 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:09,129 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:10,264 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:14,130 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:15,303 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:15,980 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:49:16,263 DEBUG   SenderThread:277147 [sender.py:send():336] send: history
+2024-05-28 23:49:16,263 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: summary_record
+2024-05-28 23:49:16,264 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-05-28 23:49:16,980 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:49:17,981 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:49:19,265 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:20,378 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:24,128 DEBUG   SenderThread:277147 [sender.py:send():336] send: stats
+2024-05-28 23:49:25,128 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:25,434 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:30,129 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:30,499 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:35,130 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:35,576 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:39,296 DEBUG   SenderThread:277147 [sender.py:send():336] send: history
+2024-05-28 23:49:39,296 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: summary_record
+2024-05-28 23:49:39,296 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-05-28 23:49:39,986 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:49:39,987 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:49:40,296 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:40,644 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:40,687 INFO    wandb-upload_1:277147 [upload_job.py:push():138] Uploaded file /tmp/tmpr_6cm7ruwandb/2dp592db-events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:49:41,987 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:49:45,297 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:45,728 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:50,297 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:50,794 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:54,128 DEBUG   SenderThread:277147 [sender.py:send():336] send: stats
+2024-05-28 23:49:55,884 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:49:56,129 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:49:57,991 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:49:58,322 DEBUG   SenderThread:277147 [sender.py:send():336] send: history
+2024-05-28 23:49:58,322 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: summary_record
+2024-05-28 23:49:58,323 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-05-28 23:49:58,991 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:49:59,992 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:50:00,978 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:01,323 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:06,067 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:06,324 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:06,994 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:50:07,336 DEBUG   SenderThread:277147 [sender.py:send():336] send: history
+2024-05-28 23:50:07,336 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: summary_record
+2024-05-28 23:50:07,337 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-05-28 23:50:07,994 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:50:07,994 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:50:11,167 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:11,338 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:16,266 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:16,338 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:21,332 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:21,339 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:21,997 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:50:22,358 DEBUG   SenderThread:277147 [sender.py:send():336] send: history
+2024-05-28 23:50:22,358 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: summary_record
+2024-05-28 23:50:22,358 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-05-28 23:50:22,998 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:50:23,998 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:50:24,129 DEBUG   SenderThread:277147 [sender.py:send():336] send: stats
+2024-05-28 23:50:26,445 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:27,130 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:31,556 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:32,131 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:35,001 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:50:35,377 DEBUG   SenderThread:277147 [sender.py:send():336] send: history
+2024-05-28 23:50:35,377 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: summary_record
+2024-05-28 23:50:35,377 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-05-28 23:50:36,001 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:50:36,001 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:50:36,666 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:37,378 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:38,002 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:50:41,747 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:42,378 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:46,855 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:47,379 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:49,004 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:50:49,396 DEBUG   SenderThread:277147 [sender.py:send():336] send: history
+2024-05-28 23:50:49,396 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: summary_record
+2024-05-28 23:50:49,396 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-05-28 23:50:49,729 INFO    wandb-upload_2:277147 [upload_job.py:push():138] Uploaded file /tmp/tmpr_6cm7ruwandb/3vu2su14-events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:50:50,005 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:50:50,005 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:50:51,962 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:52,397 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:54,129 DEBUG   SenderThread:277147 [sender.py:send():336] send: stats
+2024-05-28 23:50:57,032 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: keepalive
+2024-05-28 23:50:58,098 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: status_report
+2024-05-28 23:50:58,101 DEBUG   SenderThread:277147 [sender.py:send():336] send: exit
+2024-05-28 23:50:58,101 INFO    SenderThread:277147 [sender.py:send_exit():559] handling exit code: 255
+2024-05-28 23:50:58,101 INFO    SenderThread:277147 [sender.py:send_exit():561] handling runtime: 183
+2024-05-28 23:50:58,102 INFO    SenderThread:277147 [sender.py:_save_file():1332] saving file wandb-summary.json with policy end
+2024-05-28 23:50:58,102 INFO    SenderThread:277147 [sender.py:send_exit():567] send defer
+2024-05-28 23:50:58,102 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: defer
+2024-05-28 23:50:58,102 INFO    HandlerThread:277147 [handler.py:handle_request_defer():170] handle defer: 0
+2024-05-28 23:50:58,102 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: defer
+2024-05-28 23:50:58,102 INFO    SenderThread:277147 [sender.py:send_request_defer():583] handle sender defer: 0
+2024-05-28 23:50:58,102 INFO    SenderThread:277147 [sender.py:transition_state():587] send defer: 1
+2024-05-28 23:50:58,102 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: defer
+2024-05-28 23:50:58,102 INFO    HandlerThread:277147 [handler.py:handle_request_defer():170] handle defer: 1
+2024-05-28 23:50:58,102 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: defer
+2024-05-28 23:50:58,102 INFO    SenderThread:277147 [sender.py:send_request_defer():583] handle sender defer: 1
+2024-05-28 23:50:58,102 INFO    SenderThread:277147 [sender.py:transition_state():587] send defer: 2
+2024-05-28 23:50:58,102 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: defer
+2024-05-28 23:50:58,102 INFO    HandlerThread:277147 [handler.py:handle_request_defer():170] handle defer: 2
+2024-05-28 23:50:58,102 INFO    HandlerThread:277147 [system_monitor.py:finish():193] Stopping system monitor
+2024-05-28 23:50:58,103 DEBUG   SystemMonitor:277147 [system_monitor.py:_start():168] Finished system metrics aggregation loop
+2024-05-28 23:50:58,103 DEBUG   SystemMonitor:277147 [system_monitor.py:_start():172] Publishing last batch of metrics
+2024-05-28 23:50:58,104 INFO    HandlerThread:277147 [interfaces.py:finish():199] Joined cpu monitor
+2024-05-28 23:50:58,104 INFO    HandlerThread:277147 [interfaces.py:finish():199] Joined disk monitor
+2024-05-28 23:50:58,110 INFO    HandlerThread:277147 [interfaces.py:finish():199] Joined gpu monitor
+2024-05-28 23:50:58,110 INFO    HandlerThread:277147 [interfaces.py:finish():199] Joined memory monitor
+2024-05-28 23:50:58,110 INFO    HandlerThread:277147 [interfaces.py:finish():199] Joined network monitor
+2024-05-28 23:50:58,110 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: defer
+2024-05-28 23:50:58,110 INFO    SenderThread:277147 [sender.py:send_request_defer():583] handle sender defer: 2
+2024-05-28 23:50:58,110 INFO    SenderThread:277147 [sender.py:transition_state():587] send defer: 3
+2024-05-28 23:50:58,110 DEBUG   SenderThread:277147 [sender.py:send():336] send: stats
+2024-05-28 23:50:58,111 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: defer
+2024-05-28 23:50:58,111 INFO    HandlerThread:277147 [handler.py:handle_request_defer():170] handle defer: 3
+2024-05-28 23:50:58,111 DEBUG   SenderThread:277147 [sender.py:send_request():363] send_request: defer
+2024-05-28 23:50:58,111 INFO    SenderThread:277147 [sender.py:send_request_defer():583] handle sender defer: 3
+2024-05-28 23:50:58,111 INFO    SenderThread:277147 [sender.py:transition_state():587] send defer: 4
+2024-05-28 23:50:58,111 DEBUG   HandlerThread:277147 [handler.py:handle_request():144] handle_request: defer
+2024-05-28 23:50:58,111 INFO    HandlerThread:277147 [handler.py:handle_request_defer():170] handle defer: 4
+2024-05-28 23:50:58,602 WARNING StreamThr :277147 [internal.py:is_dead():415] Internal process exiting, parent pid 277099 disappeared
+2024-05-28 23:50:58,602 ERROR   StreamThr :277147 [internal.py:wandb_internal():153] Internal process shutdown.
+2024-05-28 23:50:59,008 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:50:59,111 INFO    WriterThread:277147 [datastore.py:close():298] close: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/run-maedkeys.wandb
+2024-05-28 23:50:59,111 INFO    SenderThread:277147 [sender.py:finish():1504] shutting down sender
+2024-05-28 23:51:00,008 INFO    Thread-13 :277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:51:01,419 INFO    SenderThread:277147 [dir_watcher.py:finish():365] shutting down directory watcher
+2024-05-28 23:51:02,009 INFO    SenderThread:277147 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:51:02,009 INFO    SenderThread:277147 [dir_watcher.py:finish():395] scan: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files
+2024-05-28 23:51:02,009 INFO    SenderThread:277147 [dir_watcher.py:finish():409] scan save: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/config.yaml config.yaml
+2024-05-28 23:51:02,009 INFO    SenderThread:277147 [dir_watcher.py:finish():409] scan save: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/requirements.txt requirements.txt
+2024-05-28 23:51:02,010 INFO    SenderThread:277147 [dir_watcher.py:finish():409] scan save: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-metadata.json wandb-metadata.json
+2024-05-28 23:51:02,011 INFO    SenderThread:277147 [dir_watcher.py:finish():409] scan save: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log output.log
+2024-05-28 23:51:02,012 INFO    SenderThread:277147 [dir_watcher.py:finish():409] scan save: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json wandb-summary.json
+2024-05-28 23:51:02,012 INFO    SenderThread:277147 [dir_watcher.py:finish():409] scan save: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0 events.out.tfevents.1716907675.DESKTOP-LQ219J4.277099.0
+2024-05-28 23:51:02,012 INFO    SenderThread:277147 [dir_watcher.py:finish():409] scan save: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/conda-environment.yaml conda-environment.yaml
+2024-05-28 23:51:02,015 INFO    SenderThread:277147 [dir_watcher.py:finish():409] scan save: /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/code/cleanrl_dqn_atari.py code/cleanrl_dqn_atari.py
+2024-05-28 23:51:02,016 INFO    SenderThread:277147 [file_pusher.py:finish():164] shutting down file pusher
+2024-05-28 23:51:02,016 INFO    SenderThread:277147 [file_pusher.py:join():169] waiting for file pusher
+2024-05-28 23:51:02,561 INFO    wandb-upload_0:277147 [upload_job.py:push():138] Uploaded file /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/requirements.txt
+2024-05-28 23:51:02,596 INFO    wandb-upload_4:277147 [upload_job.py:push():138] Uploaded file /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/conda-environment.yaml
+2024-05-28 23:51:02,640 INFO    wandb-upload_3:277147 [upload_job.py:push():138] Uploaded file /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/output.log
+2024-05-28 23:51:02,652 INFO    wandb-upload_2:277147 [upload_job.py:push():138] Uploaded file /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/wandb-summary.json
+2024-05-28 23:51:02,686 INFO    wandb-upload_1:277147 [upload_job.py:push():138] Uploaded file /home/yos/rl_hw4/wandb/run-20240528_234753-maedkeys/files/config.yaml
+2024-05-28 23:51:04,398 INFO    HandlerThread:277147 [handler.py:finish():842] shutting down handler

@@ -1,0 +1,28 @@
+2024-05-29 11:35:23,803 INFO    MainThread:937266 [wandb_setup.py:_flush():76] Configure stats pid to 937266
+2024-05-29 11:35:23,803 INFO    MainThread:937266 [wandb_setup.py:_flush():76] Loading settings from /home/yos/.config/wandb/settings
+2024-05-29 11:35:23,803 INFO    MainThread:937266 [wandb_setup.py:_flush():76] Loading settings from /home/yos/rl_hw4/wandb/settings
+2024-05-29 11:35:23,803 INFO    MainThread:937266 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-29 11:35:23,803 INFO    MainThread:937266 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-05-29 11:35:23,803 INFO    MainThread:937266 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'cleanrl_dqn_atari.py', 'program': 'cleanrl_dqn_atari.py'}
+2024-05-29 11:35:23,804 INFO    MainThread:937266 [wandb_init.py:_log_setup():506] Logging user logs to /home/yos/rl_hw4/wandb/run-20240529_113523-a3ooil89/logs/debug.log
+2024-05-29 11:35:23,804 INFO    MainThread:937266 [wandb_init.py:_log_setup():507] Logging internal logs to /home/yos/rl_hw4/wandb/run-20240529_113523-a3ooil89/logs/debug-internal.log
+2024-05-29 11:35:23,804 INFO    MainThread:937266 [wandb_init.py:init():546] calling init triggers
+2024-05-29 11:35:23,804 INFO    MainThread:937266 [wandb_init.py:init():552] wandb.init called with sweep_config: {}
+config: {'exp_name': 'cleanrl_dqn_atari', 'seed': 1, 'torch_deterministic': True, 'cuda': True, 'cuda_num': 0, 'track': True, 'wandb_project_name': 'rl_hw4_atari', 'wandb_entity': None, 'capture_video': True, 'save_model': True, 'upload_model': False, 'hf_entity': '', 'env_id': 'ALE/Asterix-v5', 'total_timesteps': 10000000, 'learning_rate': 0.0001, 'num_envs': 1, 'buffer_size': 100000, 'gamma': 0.99, 'tau': 1.0, 'target_network_frequency': 1000, 'batch_size': 32, 'start_e': 1, 'end_e': 0.01, 'exploration_fraction': 0.1, 'learning_starts': 80000, 'train_frequency': 4}
+2024-05-29 11:35:23,804 INFO    MainThread:937266 [wandb_init.py:init():602] starting backend
+2024-05-29 11:35:23,804 INFO    MainThread:937266 [wandb_init.py:init():606] setting up manager
+2024-05-29 11:35:23,805 INFO    MainThread:937266 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-29 11:35:23,805 INFO    MainThread:937266 [wandb_init.py:init():613] backend started and connected
+2024-05-29 11:35:23,807 INFO    MainThread:937266 [wandb_init.py:init():701] updated telemetry
+2024-05-29 11:35:23,807 INFO    MainThread:937266 [wandb_init.py:init():741] communicating run to backend with 60.0 second timeout
+2024-05-29 11:35:24,366 INFO    MainThread:937266 [wandb_run.py:_on_init():2131] communicating current version
+2024-05-29 11:35:24,427 INFO    MainThread:937266 [wandb_run.py:_on_init():2140] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-29 11:35:24,427 INFO    MainThread:937266 [wandb_init.py:init():789] starting run threads in backend
+2024-05-29 11:35:25,471 INFO    MainThread:937266 [wandb_run.py:_console_start():2112] atexit reg
+2024-05-29 11:35:25,471 INFO    MainThread:937266 [wandb_run.py:_redirect():1967] redirect: SettingsConsole.WRAP_RAW
+2024-05-29 11:35:25,471 INFO    MainThread:937266 [wandb_run.py:_redirect():2032] Wrapping output streams.
+2024-05-29 11:35:25,471 INFO    MainThread:937266 [wandb_run.py:_redirect():2057] Redirects installed.
+2024-05-29 11:35:25,471 INFO    MainThread:937266 [wandb_init.py:init():831] run started, returning control to user process
+2024-05-29 11:35:25,472 INFO    MainThread:937266 [wandb_run.py:_tensorboard_callback():1394] tensorboard callback: runs/ALE/Asterix-v5__cleanrl_dqn_atari__1__1716950122, True
+2024-05-29 11:35:37,601 WARNING MsgRouterThr:937266 [router.py:message_loop():77] message_loop has been closed

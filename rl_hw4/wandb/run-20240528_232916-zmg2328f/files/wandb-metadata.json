@@ -1,0 +1,202 @@
+{
+    "os": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.17",
+    "python": "3.8.19",
+    "heartbeatAt": "2024-05-28T14:29:17.148514",
+    "startedAt": "2024-05-28T14:29:16.547214",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--env_id",
+        "ALE/Adventure-v5"
+    ],
+    "state": "running",
+    "program": "cleanrl_dqn_atari.py",
+    "codePath": "cleanrl_dqn_atari.py",
+    "host": "DESKTOP-LQ219J4",
+    "username": "yos",
+    "executable": "/home/yos/miniconda3/envs/rl_hw4_atari/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 4192.039999999997,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 4192.04,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 1006.853931427002,
+        "used": 66.68182373046875
+    },
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4090",
+            "memory_total": 25757220864
+        }
+    ],
+    "memory": {
+        "total": 15.14449691772461
+    }
+}

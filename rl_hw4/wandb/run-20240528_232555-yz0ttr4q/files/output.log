@@ -1,0 +1,38 @@
+/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/wandb/sdk/lib/import_hooks.py:243: DeprecationWarning: Deprecated since Python 3.4. Use importlib.util.find_spec() instead.
+  loader = importlib.find_loader(fullname, path)
+/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/wrappers/monitoring/video_recorder.py:62: UserWarning: [33mWARN: Disabling video recorder because environment <OrderEnforcing<PassiveEnvChecker<AtariEnv<ALE/Adventure-v5>>>> was not initialized with any compatible video mode between `rgb_array` and `rgb_array_list`
+  logger.warn(
+/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/utils/passive_env_checker.py:364: UserWarning: [33mWARN: No render fps was declared in the environment (env.metadata['render_fps'] is None or not defined), rendering may occur at inconsistent fps.
+  logger.warn(
+Traceback (most recent call last):
+  File "cleanrl_dqn_atari.py", line 211, in <module>
+    next_obs, rewards, terminations, truncations, infos = envs.step(actions)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/vector/vector_env.py", line 203, in step
+    return self.step_wait()
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/vector/sync_vector_env.py", line 149, in step_wait
+    ) = env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/wrappers/frame_stack.py", line 179, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/core.py", line 469, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/core.py", line 469, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/core.py", line 502, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/core.py", line 408, in step
+    return self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/stable_baselines3/common/atari_wrappers.py", line 112, in step
+    obs, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/stable_baselines3/common/atari_wrappers.py", line 178, in step
+    obs, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/core.py", line 408, in step
+    return self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/wrappers/record_episode_statistics.py", line 89, in step
+    ) = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/wrappers/record_video.py", line 180, in step
+    self.close_video_recorder()
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/wrappers/record_video.py", line 193, in close_video_recorder
+    self.video_recorder.close()
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/wandb/integration/gym/__init__.py", line 66, in close
+    m = re.match(r".+(video\.\d+).+", getattr(self, path))
+AttributeError: 'VideoRecorder' object has no attribute 'path'

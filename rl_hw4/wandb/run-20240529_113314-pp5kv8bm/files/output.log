@@ -1,0 +1,18 @@
+/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/wandb/sdk/lib/import_hooks.py:243: DeprecationWarning: Deprecated since Python 3.4. Use importlib.util.find_spec() instead.
+  loader = importlib.find_loader(fullname, path)
+/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/envs/registration.py:787: UserWarning: [33mWARN: The environment is being initialised with render_mode='rgb' that is not in the possible render_modes (['human', 'rgb_array']).
+  logger.warn(
+Traceback (most recent call last):
+  File "cleanrl_dqn_atari.py", line 177, in <module>
+    envs = gym.vector.SyncVectorEnv(
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/vector/sync_vector_env.py", line 53, in __init__
+    self.envs = [env_fn() for env_fn in env_fns]
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/vector/sync_vector_env.py", line 53, in <listcomp>
+    self.envs = [env_fn() for env_fn in env_fns]
+  File "cleanrl_dqn_atari.py", line 89, in thunk
+    env = gym.make(env_id, render_mode="rgb")
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/envs/registration.py", line 801, in make
+    env = env_creator(**env_spec_kwargs)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/shimmy/atari_env.py", line 130, in __init__
+    raise Error(f"Render mode {render_mode} not supported (rgb_array, human).")
+gymnasium.error.Error: Render mode rgb not supported (rgb_array, human).

@@ -1,0 +1,43 @@
+/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/wandb/sdk/lib/import_hooks.py:243: DeprecationWarning: Deprecated since Python 3.4. Use importlib.util.find_spec() instead.
+  loader = importlib.find_loader(fullname, path)
+global_step=49, episodic_return=[150.]
+global_step=111, episodic_return=[250.]
+global_step=166, episodic_return=[150.]
+global_step=212, episodic_return=[100.]
+global_step=286, episodic_return=[450.]
+global_step=350, episodic_return=[350.]
+global_step=419, episodic_return=[150.]
+global_step=468, episodic_return=[200.]
+global_step=548, episodic_return=[300.]
+global_step=631, episodic_return=[500.]
+global_step=683, episodic_return=[250.]
+Traceback (most recent call last):
+  File "cleanrl_dqn_atari.py", line 211, in <module>
+    next_obs, rewards, terminations, truncations, infos = envs.step(actions)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/vector/vector_env.py", line 203, in step
+    return self.step_wait()
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/vector/sync_vector_env.py", line 149, in step_wait
+    ) = env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/wrappers/frame_stack.py", line 179, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/core.py", line 469, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/core.py", line 469, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/core.py", line 502, in step
+    observation, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/stable_baselines3/common/atari_wrappers.py", line 112, in step
+    obs, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/stable_baselines3/common/atari_wrappers.py", line 178, in step
+    obs, reward, terminated, truncated, info = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/core.py", line 408, in step
+    return self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/wrappers/record_episode_statistics.py", line 89, in step
+    ) = self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/wrappers/order_enforcing.py", line 56, in step
+    return self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/gymnasium/wrappers/env_checker.py", line 49, in step
+    return self.env.step(action)
+  File "/home/yos/miniconda3/envs/rl_hw4_atari/lib/python3.8/site-packages/shimmy/atari_env.py", line 294, in step
+    reward += self.ale.act(action)
+KeyboardInterrupt
