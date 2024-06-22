@@ -1,0 +1,60 @@
+Failure # 1 (occurred at 2024-06-17_16-29-06)
+Traceback (most recent call last):
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/tune/trial_runner.py", line 890, in _process_trial
+    results = self.trial_executor.fetch_result(trial)
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/tune/ray_trial_executor.py", line 788, in fetch_result
+    result = ray.get(trial_future[0], timeout=DEFAULT_GET_TIMEOUT)
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/_private/client_mode_hook.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/worker.py", line 1625, in get
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(RayOutOfMemoryError): [36mray::MAA2CTrainer.train()[39m (pid=4998, ip=192.168.46.185, repr=MAA2CTrainer)
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/rllib/agents/trainer.py", line 679, in train
+    raise e
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/rllib/agents/trainer.py", line 668, in train
+    result = Trainable.train(self)
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/tune/trainable.py", line 283, in train
+    result = self.step()
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/rllib/agents/trainer_template.py", line 206, in step
+    step_results = next(self.train_exec_impl)
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 756, in __next__
+    return next(self.built_iterator)
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 843, in apply_filter
+    for item in it:
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 843, in apply_filter
+    for item in it:
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 876, in apply_flatten
+    for item in it:
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 783, in apply_foreach
+    for item in it:
+  File "/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/util/iter.py", line 471, in base_iterator
+    yield ray.get(futures, timeout=timeout)
+ray.exceptions.RayTaskError(RayOutOfMemoryError): [36mray::RolloutWorker.par_iter_next()[39m (pid=4998, ip=192.168.46.185, repr=<ray.rllib.evaluation.rollout_worker.modify_class.<locals>.Class object at 0x7f7c1d550c10>)
+ray._private.memory_monitor.RayOutOfMemoryError: More than 95% of the memory on node DESKTOP-LQ219J4 is used (14.42 / 15.14 GB). The top 10 memory consumers are:
+
+PID	MEM	COMMAND
+4998	11.76GiB	python RL_final.py
+4295	0.19GiB	/home/yos/.vscode-server/bin/89de5a8d4d6205e5b11647eb6a74844ca23d2573/node /home/yos/.vscode-server/
+4106	0.19GiB	/home/yos/.vscode-server/bin/89de5a8d4d6205e5b11647eb6a74844ca23d2573/node --dns-result-order=ipv4fi
+5071	0.07GiB	/home/yos/miniconda3/envs/rl_final/lib/python3.8/site-packages/ray/core/src/ray/raylet/raylet --rayl
+891	0.06GiB	/home/yos/.vscode-server/bin/89de5a8d4d6205e5b11647eb6a74844ca23d2573/node /home/yos/.vscode-server/
+412	0.05GiB	/snap/ubuntu-desktop-installer/1286/usr/bin/python3.10 -m subiquity.cmd.server --use-os-prober --sto
+5069	0.05GiB	/home/yos/miniconda3/envs/rl_final/bin/python -u /home/yos/miniconda3/envs/rl_final/lib/python3.8/si
+5209	0.04GiB	ray::IDLE
+5165	0.04GiB	ray::IDLE
+5207	0.04GiB	ray::IDLE
+
+In addition, up to 0.0 GiB of shared memory is currently being used by the Ray object store.
+---
+--- Tip: Use the `ray memory` command to list active objects in the cluster.
+--- To disable OOM exceptions, set RAY_DISABLE_MEMORY_MONITOR=1.
+---
+

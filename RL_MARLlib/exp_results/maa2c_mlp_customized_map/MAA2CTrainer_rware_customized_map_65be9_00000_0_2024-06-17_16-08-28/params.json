@@ -1,0 +1,96 @@
+{
+  "batch_mode": "truncate_episodes",
+  "entropy_coeff": 0.01,
+  "env": "rware_customized_map",
+  "evaluation_interval": 50,
+  "framework": "torch",
+  "lambda": 1.0,
+  "lr": 0.0005,
+  "model": {
+    "custom_model": "Centralized_Critic_Model",
+    "custom_model_config": {
+      "agent_level_batch_update": true,
+      "agent_name_ls": [
+        "agent_0",
+        "agent_1",
+        "agent_2",
+        "agent_3"
+      ],
+      "algorithm": "maa2c",
+      "checkpoint_end": true,
+      "checkpoint_freq": 100,
+      "env": "rware",
+      "env_args": {
+        "column_height": 1,
+        "difficulty": "medium",
+        "fast_obs": true,
+        "map_name": "customized_map",
+        "map_size": "tiny",
+        "max_inactivity_steps": null,
+        "max_steps": 500,
+        "msg_bits": 0,
+        "n_agents": 4,
+        "request_queue_size": 4,
+        "reward_type": "RewardType.INDIVIDUAL",
+        "sensor_range": 1,
+        "shelf_columns": 3,
+        "shelf_rows": 1
+      },
+      "episode_limit": 500,
+      "evaluation_interval": 50,
+      "force_coop": false,
+      "framework": "torch",
+      "global_state_flag": false,
+      "local_dir": "",
+      "local_mode": true,
+      "mask_flag": false,
+      "model_arch_args": {
+        "core_arch": "mlp",
+        "fc_layer": 2,
+        "hidden_state_size": 256,
+        "out_dim_fc_0": 128,
+        "out_dim_fc_1": 64
+      },
+      "num_agents": 4,
+      "num_cpus_per_worker": 1,
+      "num_gpus": 1,
+      "num_gpus_per_worker": 0,
+      "num_workers": 4,
+      "opp_action_in_cc": true,
+      "policy_mapping_info": {
+        "all_scenario": {
+          "all_agents_one_policy": true,
+          "description": "rware all scenarios",
+          "one_agent_one_policy": true,
+          "team_prefix": [
+            "agent_"
+          ]
+        }
+      },
+      "restore_path": {
+        "model_path": "",
+        "params_path": ""
+      },
+      "seed": 321,
+      "share_policy": "group",
+      "space_act": "Discrete(5)",
+      "space_obs": "Dict(obs:Box([-100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100.\n -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100.\n -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100.\n -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100.\n -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100.\n -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100.\n -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100.\n -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100.\n -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100. -100.\n -100. -100. -100. -100.], [100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100.\n 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100.\n 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100.\n 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100.\n 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100.\n 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100.\n 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100.\n 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100. 100.], (112,), float32))",
+      "stop_iters": 9999999,
+      "stop_reward": 999999,
+      "stop_timesteps": 2000000
+    },
+    "max_seq_len": 500
+  },
+  "multiagent": {
+    "policies": "{'default_policy'}",
+    "policy_mapping_fn": "<function run_cc.<locals>.<lambda> at 0x7f7c76c9a1f0>"
+  },
+  "num_gpus": 1,
+  "num_gpus_per_worker": 0,
+  "num_workers": 4,
+  "seed": 321,
+  "simple_optimizer": false,
+  "train_batch_size": 5000,
+  "use_gae": true,
+  "vf_loss_coeff": 1.0
+}
